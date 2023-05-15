@@ -1,0 +1,195 @@
+.btn--instagram {
+  color: #C13584;
+  font-size: 1.5rem;
+}
+
+.btn--facebook {
+  color: #3b5998;
+  font-size: 1.5rem;
+}
+
+.btn--twitter {
+  color: #00acee;
+  font-size: 1.5rem;
+}
+
+.btn--linkedin {
+  color: #0e76a8;
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+button[type=submit] {
+  background-color: #32ae91;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008c7e;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.index {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main__portada {
+  grid-area: portada;
+}
+
+.main__img {
+  width: 100%;
+  height: 27rem;
+  object-fit: fill;
+}
+
+.index__main {
+  display: grid;
+  grid-template-areas: "portada portada portada" "aside indice indice";
+  grid-column: 1fr 1fr 1fr;
+  grid-row: auto auto;
+}
+
+.main__indice {
+  background-color: #ffffff;
+  grid-area: indice;
+}
+
+.main__h1 {
+  background: black;
+  text-align: center;
+  color: white;
+}
+
+.main__contenido {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card__img {
+  height: 14rem;
+  object-fit: fill;
+}
+
+.card__h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card__p {
+  font-size: 0.8rem;
+}
+
+.card__b {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #009688;
+}
+
+.barra-lateral {
+  background-color: #d6dce1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+}
+
+.valores {
+  background: rgb(14, 132, 122);
+  height: 10rem;
+  width: 12rem;
+  border-radius: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 0.3s ease-in-out;
+}
+
+.valores:hover {
+  transform: scale(1.2);
+  color: #40caa8;
+}
+
+.ico {
+  font-size: 4rem;
+  color: black;
+}
+
+.ico:hover {
+  color: #40caa8;
+}
+
+.valores__p {
+  width: 11rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+header {
+  grid-area: header;
+}
+
+/*# sourceMappingURL=estilo.css.map */
